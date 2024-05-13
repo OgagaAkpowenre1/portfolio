@@ -2,37 +2,99 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  min-height: 90vh;
+  min-width: 90vw;
+  /* margin-bottom: 300px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li > a {
+  font-size: 40px;
+}
+
+.grid{
+    margin: 100px auto;
+}
+
+.fab{
+    font-size: 50px;
+}
+
+.text-box {
+  margin: 10% auto;
+}
+
+h3{
+    animation: fadeIn 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards; 
+}
+
+h5{
+    font-size: 20px;
+    animation: fadeIn 8s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+h4 {
+  animation: fadeIn 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+span {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: fadeIn 8s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.carousel .carousel-item{
+  min-width: fit-content;
+  min-height: fit-content;
+}
+.project {
+  width: 1000px;
+  border: 2px solid black;
+  margin: 0px;
+}
+.img-area {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  height: 20%;
+}
+.img-area img {
+  width: 100%;
+}
+.text-area{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2%;
+}
+.text-area p{
+  text-align: center;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-area > h4, p{
+  color: #fff;
 }
